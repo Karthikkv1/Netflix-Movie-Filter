@@ -1,0 +1,129 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,800;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px; /* line 2 and line 3 to remove extra margin and padding at the beginning of the header*/
+    box-sizing: border-box;  /*To avoid extra scroll bar effect due to 100% width*/
+}
+
+
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    padding-left: 5%;
+    padding-right: 5%; /*line 11 and 12 for giving padding for "logo" div box*/
+    display: flex; /*To make two elements that is "logo" and "search"*/
+    justify-content: space-between; /* To give space between "logo"and "search" */
+}
+
+.logo{
+    width: 20%;
+    height: 70px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img{
+    /* width: 100%; */
+    height: 80px;   /*To give 40px height of parent class logo*/
+}
+
+.search{
+    width: 30%;
+    height: 70px;
+    /* background-color: blue;  */
+    display: flex;
+    justify-content: center; /*Horizontally to be in center*/
+    align-items: center; /*vertically to be in center*/
+
+}
+
+.search-bar{
+    width: 80%; /*To give 80% width of parent class search*/
+    height: 40px;
+    background-color:white;
+    display: flex;/*To arrange the searchbar,search icon side by side*/
+    align-items: center;
+    column-gap: 25px; /*To give distance between search-box and search-icon*/
+    border-radius: 10px; /*To adjust border radius of searchbar*/
+    overflow: hidden;  /*To hide the extra things which we dont want */
+    
+}
+
+.search-box{
+    width: 80%;   /*To give 80% of width of parent class that is "search-bar" to child class "search-box"*/
+    height:40px; /*To give height to search box*/
+    font-size: 18px; /*To give size to text inside search-box*/
+    text-indent: 20px;
+    border: none; /*To remove border between searchbox and searchicon*/
+    outline: none; /*To remove outline between searchbox and searchicon*/
+}
+
+.search-icon{
+    /* width: 20%; */
+    height: 20px; /*To adjust the size of the icon*/
+}
+
+
+/* movies */
+
+.movies{
+    width: 100%;
+    padding: 50px 5%;
+    background-color: gray;
+    display: flex; /*To arrange movies horizontally */
+    flex-wrap: wrap; /*To arrange displayed movie properly*/
+    column-gap: 6.66%; /*To give gap(space) between movies(horizontally)*/
+    row-gap: 20px;  /*To give gap(space) between movies(vertically)*/
+}
+
+.movie{
+    width: 20%;
+    height: 500px;
+    /* background-color: red; */
+     overflow: hidden; /*To hide unwanted extra things */
+    border-radius: 10px;
+    position: relative;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute; /*To place overlay above(behind) poster */
+    opacity: 0; /*To give transparency*/
+    transition: 0.3s;
+    cursor: pointer;  /*To form hand like symbols when hovering on movie poster that is on overlay*/
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.video{
+    width: 100%;
+    height:50%;
+    /* background-color: yellow; */
+}
+
+.details{
+    width: 100%;
+    height:50%;
+    /* background-color: blue; */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+}
+
+.poster{
+    width: 100%;  /*To fix image to the width of  movie container*/
+    height: 100%; /*To fix image to the height of  movie container*/
+}

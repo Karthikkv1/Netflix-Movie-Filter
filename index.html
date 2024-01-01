@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+           <img  class="logo-img" src="https://cdn1.iconfinder.com/data/icons/logos-brands-in-colors/7500/Netflix_Logo_RGB-64.png" alt="Netflix-logo">
+        </div>
+
+        <div class="search">
+
+            <div class="search-bar">
+                <input onkeyup="searchMovie()" type="text" placeholder="Search-Movie" class="search-box" id="search"> <!--id given here to access it in js-->
+                <img onclick="searchMovie()" class="search-icon" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-256.png" alt="search-icon">
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="movies" id="movies">
+      
+
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
